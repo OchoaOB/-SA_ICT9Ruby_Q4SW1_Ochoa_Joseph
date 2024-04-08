@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+        body 
+            { 
+            background-color: white;
+            background-image: url('https://img.freepik.com/premium-photo/pixel-art-house-post-apocalyptic-world-landscape-background-retro-style-8-bit-game-ai_985124-2197.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+            font-family: 'Roboto Mono', monospace; 
+            margin: 0; 
+            padding: 0;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+        }
+        .content-container {
+            background-color: darkslategray; 
+            padding: 23px; 
+            max-width: 650px;
+            text-align: center; 
+            border-radius: 20px; 
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5); 
+            animation: glowing 3s infinite alternate;
+        }
+
+        @keyframes glowing {
+            from {
+                box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+            }
+            to {
+                box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.9), 0px 0px 50px rgba(255, 255, 255, 0.5), 0px 0px 75px rgba(255, 255, 255, 0.3);
+            }
+    }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px; 
+            text-shadow: 0px 0px 10px black;
+            color: lightblue;
+        }
+        .green-btn {
+            background-color: green;
+            border-color: green;
+            box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.2);
+        }
+        .yellow-btn {
+            background-color: yellow;
+            border-color: yellow;
+            box-shadow: 0px 4px 10px rgba(255, 255, 0, 0.2);
+        }
+        .red-btn {
+            background-color: red;
+            border-color: red;
+            color: white;
+            box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.2);
+        }
+        img {
+            max-width: 30%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .onehundred {
+            color:lightgoldenrodyellow;
+            background-color: black;
+        }
+        .btn {
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="content-container">
+    <h1>Click the buttons below to convert <span class="onehundred">100</span> pesos to other countries.</h1>
+    <img src="moneygif.jpg">
+    <div>
+        <button type="button" class="btn btn-success green-btn" onclick="window.location.href='page2.html'"><b>€ - Euro</b></button>
+        <button type="button" class="btn btn-warning yellow-btn" onclick="window.location.href='page1.html'"><b>฿ -  Baht</b></button>
+        <button type="button" class="btn btn-danger red-btn" onclick="window.location.href='page3.html'"><b>¥ - Yen</b></button>
+    </div>
+</div>
+</body>
+</html>

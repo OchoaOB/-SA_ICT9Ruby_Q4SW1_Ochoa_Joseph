@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yen Currency</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+        body { 
+            background-color: white;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL8Nbi3bakSMjLeNzT4ibxscN-yYdbicYiBg&s'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+            font-family: 'Roboto Mono', monospace; 
+            margin: 0; 
+            padding: 0;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+        }
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content-container {
+            background-color: darkred;
+            padding: 23px; 
+            max-width: 650px;
+            text-align: center; 
+            border-radius: 20px; 
+            box-shadow: 0px 0px 15px rgba(255, 192, 203, 0.5);
+            animation: glowing 3s infinite alternate;
+        }
+        @keyframes glowing {
+            from {
+                box-shadow: 0px 0px 15px rgba(255, 192, 203, 0.5);
+            }
+            to {
+                box-shadow: 0px 0px 30px rgba(255, 192, 203, 0.9), 0px 0px 50px rgba(255, 192, 203, 0.5), 0px 0px 75px rgba(255, 192, 203, 0.3); 
+            }
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px; 
+            text-shadow: 0px 0px 10px black;
+            color: lightpink; 
+        }
+        }
+        .img-container {
+            margin-bottom: 20px; 
+        }
+        img {
+            max-width: 30%;
+            height: auto;
+        }
+        .number-container {
+            margin-bottom: 20px; 
+        }
+        .number {
+            font-size: 36px;
+            font-weight: bold; 
+            color: white;
+            background-color: black; 
+            padding: 10px; 
+            border-radius: 8px; 
+        }
+        .back-button {
+            background-color: red; 
+            color: black; 
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px; 
+        }
+        .back-button:hover {
+            background-color: black;
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<div class="content-wrapper">
+    <div class="content-container">
+        <div class="img-container">
+            <img src="yen.png" alt="yen">
+        </div>
+        <h1>The equivalent amount of 100 pesos in Yen is:</h1>
+        <div class="number-container">
+            <span class="number">268.54</span>
+        </div>
+    </div>
+    <button class="back-button" onclick="window.location.href='index.html'">Back to Main Page</button>
+</div>
+</body>
+</html>
